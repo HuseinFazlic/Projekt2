@@ -1,0 +1,122 @@
+/*
+Name: Husein Fazlic 170302013
+Course: Web Application Development
+Professor: Ali Almisreb
+*/
+
+body { 
+	text-align: center;
+	font-family: Arial;
+	background-image: url('food_pattern.png'); /* creativefabrica.com */
+	background-position: left, right;
+	color: navy;
+}
+.overlay {
+	height: 100%;
+	width: 0%;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.95;
+	overflow-x: hidden;
+	transition: 0.7s;
+}
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: Grey;
+	display: block;
+}
+.overlay a:hover {
+	color: white;
+}
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 20px
+	}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+#intro>h1 {
+	font-size: 30px;
+	background-color: lightPink;
+	display: inline;
+}
+#intro>img {
+	display: block;
+	width: 7%;
+	margin: 10px auto;
+	background-color: navy;
+	padding: 5px;
+	cursor:pointer;
+	
+}
+.slideshow-container {
+	max-width: 750px;
+	padding: 1%;
+	position: relative;
+	margin: 20px auto 0px auto;
+	background-color: skyBlue;
+}
+.image_slide {
+	width: 100%;
+}
+.mySlides {
+	display: none;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {opacity: 0.7}
+	to {opacity: 1}
+}
+/*****Dishes****/
+.dish-content {
+	width: 70%;
+	overflow:hidden;
+	background-color: lightPink;
+	margin: auto;
+}
+.dish {
+	width: 50%;
+	float: left;
+	display: block;
+	margin-bottom: 10px;
+}
+.photo-dish {
+	width: 60%;
+	height: 40%;
+	display: block;
+	margin: auto;
+}
+@media screen and (max-width: 800px) {
+	.dish-content {
+		width: 90%;
+	}
+	.dish {
+		width: 100%;
+	}
+}
+	
+
